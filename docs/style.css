@@ -1,0 +1,76 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: #292628;
+    color: #f54e47;
+    overflow: hidden;
+}
+
+header {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 5rem;
+    padding-left: 4vw;
+    margin-bottom: 0;
+}
+
+header > h1 {
+    margin: 0;
+}
+
+#triange {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 1000px 1000px 0;
+    border-color: transparent #f54e47 transparent transparent;
+    line-height: 0;
+    _border-color: #000000 #f54e47 #000000 #000000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+
+main {
+    padding-left: 4vw;
+    width: 60vw;
+    font-size: 2rem;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main > p {
+    margin: 0;
+}
+
+/*This is a very hacky way to change the colour of black svgs to another specific one
+https://codepen.io/sosuke/pen/Pjoqqp*/
+.convert-svg-to-meadow-col {
+    filter: invert(26%) sepia(47%) saturate(1835%) hue-rotate(330deg) brightness(140%) contrast(92%);
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1vw;
+}
+
+.link-button {
+    width: 5vw;
+    padding: 1rem;
+}
+
+.link:link, .link:visited, .link:hover, .link:active {
+    color: #f54e47;
+}
