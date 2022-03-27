@@ -1,76 +1,145 @@
+* {
+    --accent-col: #f54e47;
+    --bg-col: #0F0F0F;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     box-sizing: border-box;
-    background-color: #292628;
-    color: #f54e47;
-    overflow: hidden;
+    background-color: var(--bg-col);
+    color: white;
 }
 
-header {
-    z-index: 1;
+nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 5rem;
-    padding-left: 4vw;
-    margin-bottom: 0;
+    align-content: center;
+    justify-content: space-around;
 }
 
-header > h1 {
-    margin: 0;
-}
-
-#triange {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 1000px 1000px 0;
-    border-color: transparent #f54e47 transparent transparent;
-    line-height: 0;
-    _border-color: #000000 #f54e47 #000000 #000000;
-    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
-}
-
-main {
-    padding-left: 4vw;
-    width: 60vw;
-    font-size: 2rem;
-    margin: 0;
-
+.nav-left {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-content: center;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
     align-items: center;
 }
 
-main > p {
-    margin: 0;
+.nav-link-icon {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
-/*This is a very hacky way to change the colour of black svgs to another specific one
-https://codepen.io/sosuke/pen/Pjoqqp*/
-.convert-svg-to-meadow-col {
-    filter: invert(26%) sepia(47%) saturate(1835%) hue-rotate(330deg) brightness(140%) contrast(92%);
+.nav-logo {
+    width: 50px;
 }
 
-.link-container {
+.nav-control-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-left: 15px;
+}
+
+.nav-control-list > li {
+    margin-left: 30px;
+}
+
+.nav-control-link:link, .nav-control-link:visited, .nav-control-link:hover, .nav-control-link:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-intro {
+    margin: auto;
+    width: 35vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.main-intro-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 6rem;
+}
+
+.main-intro-about {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 140.5%;
+    color: #B3B3B3;
+}
+
+.main-intro-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-intro-buttons > a {
+    width: 45%;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+#main-intro-download {
+    background-color: var(--accent-col);
+    padding: 5px;
+    margin: 10px;
+}
+
+#main-intro-docs {
+    padding: 5px;
+    margin: 10px;
+}
+
+.feature-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-around;
-    padding: 1vw;
+    padding: 50px 0 50px 0;
 }
 
-.link-button {
-    width: 5vw;
-    padding: 1rem;
+.feature-about {
+    width: 30vw;
 }
 
-.link:link, .link:visited, .link:hover, .link:active {
-    color: #f54e47;
+.feature-image {
+    max-width:  30vw;
 }
+
+.feature-about-prompt {
+    padding: 4px 20px 4px 20px;
+    background-color: #3965FF;
+    border-radius: 40px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.feature-about-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.feature-about-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+}
+

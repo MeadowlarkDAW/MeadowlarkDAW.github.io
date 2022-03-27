@@ -1,31 +1,68 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-<head>
-    <title>Meadowlark</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="triange"></div>
-    <header>
-        <h1 class="title">Meadowlark</h1>
-        <img alt="The Meadowlark logo" src="images/meadowlark-logo-512.png"/>
-    </header>
-    <main>
-        <div>
-            <p style="margin-top: 0;">Meadowlark is a (currently incomplete) project that aims to be a FREE and open-source DAW 
-                (Digital Audio Workstation) for Linux, Mac and Windows.</p>
-            <p>Its goals are to be a powerful recording, composing, editing, sound designing, mixing, 
-            and mastering tool for artists around the world, while also being intuitive and customizable.</p>
-            <p>Get involved on <a class="link" href="https://github.com/MeadowlarkDAW/Meadowlark">GitHub</a> or <a class="link" href="https://discord.com/invite/2W3Xvc8wy4">Discord</a>!</p>
-        </div>
-        <div class="link-container">
-            <a class="link" href="https://github.com/MeadowlarkDAW/Meadowlark"><img alt="GitHub Logo" src="images/github-brands.svg" class="convert-svg-to-meadow-col link-button"/></a>            
-            <a class="link" href="https://discord.com/invite/2W3Xvc8wy4"><img alt="Discord logo" src="images/discord-brands.svg" class="convert-svg-to-meadow-col link-button"/></a>        
-        </div>
-    </main>
-
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Meadowlark</title>
+        <meta name="description" content="A free open source DAW for Windows, Mac and Linux">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://api.fonts.coollabs.io">
+        <link href="https://api.fonts.coollabs.io/css2?family=Fira+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav>
+            <div class="nav-left">
+                <img class="nav-logo" src="images/meadowlark-logo-512.png">
+                <ul class="nav-control-list">
+                    <li><a href="#home" class="nav-control-link">Home</a></li>
+                    <li><a class="nav-control-link">News</a></li>
+                    <li><a class="nav-control-link">Features</a></li>
+                    <li><a class="nav-control-link">Download</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="https://discord.gg/2W3Xvc8wy4" class="nav-link-icon"><img src="images/discord-icon.png"></a>
+                <a href="https://github.com/MeadowlarkDAW/Meadowlark" class="nav-link-icon"><img src="images/github-icon.png"></a>
+            </div>
+        </nav>
+        <main>
+            <section class="main-intro" id="home">
+                <h1 class="main-intro-title">Meadowlark</h1>
+                <p class="main-intro-about">
+                    Meadowlark is a (currently incomplete) project that aims 
+                    to be a FREE and open-source DAW for Linux, Mac and Windows.
+                </p>
+                <div class="main-intro-buttons">
+                    <a id="main-intro-download">Download</a>
+                    <a id="main-intro-docs">Documentation</a>
+                </div>
+            </section>
+            <section class="feature-block">
+                <div class="feature-about">
+                    <span class="feature-about-prompt">UPCOMING FEATURE</span>
+                    <h2 class="feature-about-title">SOME HUGE FEATURE</h2>
+                    <p class="feature-about-text">This is where you guys talk about a feature you really enjoyed developing and stuff. 
+                        It is really cool because it is built by the community and it is really interesting.</p>
+                </div>
+                <img class="feature-image" src="images/flight.png">
+            </section>
+            <section class="feature-block">
+                <img class="feature-image" src="images/meadowlark-logo-512.png">
+                <div class="feature-about">
+                    <span class="feature-about-prompt">UPCOMING FEATURE</span>
+                    <h2 class="feature-about-title">SOME HUGE FEATURE</h2>
+                    <p class="feature-about-text">This is where you guys talk about a feature you really enjoyed developing and stuff. 
+                        It is really cool because it is built by the community and it is really interesting.</p>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
