@@ -11,11 +11,17 @@ body {
     color: white;
     overflow-x: hidden;
 }
-/* 
-.bg-elements {
-    position: absolute;
-} */
 
+/*Change all link states to be white*/
+a:link, a:visited, a:hover, a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*
+===Navigation Bar===
+*/
 
 nav {
     display: flex;
@@ -25,17 +31,12 @@ nav {
     margin-top: 1%;
 }
 
-.nav-left {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-}
-
-.nav-right {
+.nav-group {
     display: flex;
     flex-direction: row;
     align-content: center;
     align-items: center;
+
 }
 
 .nav-link-icon {
@@ -58,24 +59,16 @@ nav {
     margin-left: 30px;
 }
 
-.nav-control-link:link, .nav-control-link:visited, .nav-control-link:hover, .nav-control-link:active {
-    color: #fff;
-    text-decoration: none;
-}
+/*
+===BG Decorations
+*/
 
-main {
-    width: 60vw;
-    margin: auto;
-    z-index: 1;
-}
-
+/* The box-shadow was baked in by Figma */
 #bg-mockup {
     position: absolute;
     top: 15rem;
     z-index: -3;
     width: 60vw;
-    /* box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2); */
-    /* mask-image: linear-gradient(180deg, #141112 6.25%, rgba(0, 0, 0, 0) 100%), url(3.png); */
 }
 
 #bg-block-top {
@@ -117,6 +110,16 @@ main {
     left: -28vw;
 }
 
+/*
+===Main Block===
+*/
+
+main {
+    width: 60vw;
+    margin: auto;
+    z-index: 1;
+}
+
 .main-intro {
     position: relative;
     margin: auto;
@@ -137,36 +140,40 @@ main {
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
-    line-height: 140.5%;
     color: #B3B3B3;
 }
 
 .main-intro-buttons {
     width: 100%;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    font-style: normal;
 }
 
 .main-intro-buttons > a {
     width: 45%;
-    text-align: center;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
+    padding: 5px;
+    margin: 10px;
 }
 
 #main-intro-download {
     background-color: var(--accent-col);
-    padding: 5px;
-    margin: 10px;
 }
 
 #main-intro-docs {
-    padding: 5px;
-    margin: 10px;
+    background-color: var(--bg-col-light);
 }
+
+/*
+===Features===
+*/
 
 .feature-block {
     position: relative;
@@ -189,22 +196,20 @@ main {
 
 .feature-about-prompt {
     padding: 4px 20px 4px 20px;
+    
     background-color: #3965FF;
     border-radius: 40px;
-    font-style: normal;
+
     font-weight: 900;
     font-size: 20px;
 }
 
 .feature-about-title {
-    font-style: normal;
     font-weight: 900;
     font-size: 32px;
-    line-height: 48px;
 }
 
 .feature-about-text {
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 190%;
