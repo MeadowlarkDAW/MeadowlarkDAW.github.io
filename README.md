@@ -5,4 +5,3 @@ The official website for the Meadowlark DAW
 
 - The boxes behind the features cause the background gradient to repeat
 - A mobile style
-- Favicon
