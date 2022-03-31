@@ -176,11 +176,23 @@ main {
 ===Roadmap===
 */
 
+.roadmap-block:before {
+    content: "";
+    position: absolute;
+    background-color: var(--bg-col-light);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: rotate(2deg) translateY(1rem);
+}
+
 .roadmap-block {
+    position: relative;
     display: grid;
     grid-template-columns: 40% 30% 30%;
     list-style-type: none;
-
+    margin-bottom: 1rem;
+    padding: 1rem;
 }
 
 .roadmap-block-description {
