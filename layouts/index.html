@@ -21,6 +21,8 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
+        <img id="bg-mockup" src="images/gui-mockup.png"/>
+
         <nav>
             <div class="nav-group">
                 <img class="nav-logo" src="images/meadowlark-logo-512.png">
@@ -38,8 +40,8 @@
         </nav>
         <main>
             <section class="main-intro" id="home">
-                <img id="bg-mockup" src="images/gui-mockup.png"/>
-                <div id="bg-block-top"></div>
+                
+                <!--<div id="bg-block-top"></div>-->
                 <h1 class="main-intro-title">Meadowlark</h1>
                 <p class="main-intro-about">
                     Meadowlark is a (currently incomplete) project that aims 
@@ -49,6 +51,22 @@
                     <a target="_blank" href="https://www.youtube.com/watch?v=iik25wqIuFo" id="main-intro-download">Download</a>
                     <a target="_blank" id="main-intro-docs">Documentation</a>
                 </div>
+            </section>
+
+            <section class="roadmap" id="roadmap">
+                <ul>
+                {{range $.Site.Data.roadmap}}
+                    <li class="roadmap-block">
+                        <div class="roadmap-block-description">
+                            <h2>{{.title}}</h2>
+                            <p>{{.description}}</p>
+                        </div>
+                        <span class="roadmap-block-status">Status: {{.status}}</span>
+                        <p class="roadmap-block-time">{{.time_estimate}}</p>
+                    </li>
+                {{end}}
+                </ul>
+                
             </section>
 
             <section class="features" id="features">

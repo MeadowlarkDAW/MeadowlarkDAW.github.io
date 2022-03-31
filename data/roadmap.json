@@ -1,0 +1,20 @@
+[
+    {
+        "title": "UI Design finalized",
+        "description": "The UI design is finalized and only subject to little change",
+        "status": "In Progress",
+        "time_estimate": "Soon™"
+    },
+    {
+        "title": "MVP Release",
+        "description": "A functional minimal viable product",
+        "status": "Milestone",
+        "time_estimate": "Soon™"
+    },
+    {
+        "title": "Collaborative Editing",
+        "description": "The ability to work on the same project from different systems at the same time",
+        "status": "In Planning",
+        "time_estimate": "Planned"
+    }
+]
