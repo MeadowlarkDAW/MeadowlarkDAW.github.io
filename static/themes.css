@@ -2,6 +2,8 @@
     --background-main: var(--color-level-3);
     --background-secondary: var(--color-level-4);
     --background-tertiary: var(--color-level-5);
+    --background-decor: var(--color-level-3);
+    --background-decor-darker: var(--color-level-1);
     --interactable-main: var(--color-level-8);
     --interactable-disabled: var(--color-level-6)
 }
@@ -10,6 +12,8 @@
     --background-main: var(--color-level-9);
     --background-secondary: var(--color-level-8);
     --background-tertiary: var(--color-level-7);
+    --background-decor: var(--color-level-7);
+    --background-decor-darker: var(--color-level-5);
     --interactable-main: var(--color-level-3);
     --interactable-disabled: var(--color-level-6)
 }

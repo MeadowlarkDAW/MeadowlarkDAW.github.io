@@ -51,7 +51,10 @@
 
         width: 100%;
         height: 15rem;
-        background-color: var(--background-main);
+        background: linear-gradient(
+            var(--background-decor) 0%,
+            var(--background-decor-darker) 100%
+        );
         transform: translateZ(-150px) scale(1.5) rotate(-15deg)
             translate(0, 45rem);
         z-index: 12;
@@ -62,7 +65,10 @@
 
         width: 100%;
         height: 30rem;
-        background-color: var(--accent-color);
+        background: linear-gradient(
+            var(--accent-shaded) 0%,
+            var(--background-decor-darker) 100%
+        );
         transform: translateZ(-225px) scale(2) rotate(35deg) translate(0, 40rem);
         z-index: 2;
     }

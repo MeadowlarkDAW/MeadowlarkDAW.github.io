@@ -71,7 +71,7 @@
     }
 
     .features-background {
-        transform: translateZ(-50px) scale(1.25) translateY(8rem);
+        transform: translateZ(0) scale(1);
         z-index: 2;
         background-color: var(--background-main);
     }

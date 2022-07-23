@@ -35,9 +35,11 @@ body {
 
     --accent-color: #FF3939;
     --accent-color-hover: #ff5858;
+    --accent-shaded: #d62323;
+    --accent-shaded-darker: #911414;
 
-    --color-level-1: #0e0e0e;
-    --color-level-2: #1E1E1E;
+    --color-level-1: #202020;
+    --color-level-2: #222222;
     --color-level-3: #2C2C2C;
     --color-level-4: #3D3D3D;
     --color-level-5: #525252;
