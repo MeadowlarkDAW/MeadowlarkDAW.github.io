@@ -25,7 +25,9 @@
                 logoId={icon}
                 height="1.5rem"
                 width="1.5rem"
-                fill={logoHover ? "var(--accent-color)" : "var(--text-main)"}
+                fill={logoHover
+                    ? "var(--accent-color)"
+                    : "var(--interactable-main)"}
             />
         </div>
     {/if}
@@ -33,10 +35,14 @@
 
 <style>
     .navbar-button {
-        padding: 1rem;
         cursor: pointer;
         user-select: none;
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        height: 100%;
     }
 
     .navbar-button:hover {

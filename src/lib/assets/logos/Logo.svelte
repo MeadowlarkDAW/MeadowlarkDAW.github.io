@@ -6,7 +6,7 @@
 
     export let logoId: Logos = Logos.None;
 
-    export let fill = "var(--text-main)";
+    export let fill = "var(--interactable-main)";
 
     let logo = logos.get(logoId) as Logo;
 

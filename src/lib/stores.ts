@@ -7,7 +7,7 @@ function createTheme() {
     return {
         subscribe,
         toggle: () => {
-            update(t => t == Theme.Dark ? Theme.Light : Theme.Dark)
+            update(t => t = t == Theme.Dark ? Theme.Light : Theme.Dark)
         },
         set
     }

@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Min Sans;
+    src: url('/src/lib/assets/fonts/MinSansVF.ttf');
+}
+
+@font-face {
+    font-family: SUIT;
+    src: url('/src/lib/assets/fonts/SUIT-Variable.ttf');
+}
+
 * {
     border: 0;
     margin: 0;
@@ -5,29 +15,53 @@
     box-sizing: border-box;
     transition: all 0.15s ease-in-out;
 
-    --accent-color: #FF3939;
-}
-
-:root {
-    font-size: 16px;
-}
-
-body,
-body * {
     line-height: 1.5rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1rem;
     font-weight: 400;
-    color: var(--text-main);
+    color: var(--interactable-main);
     direction: ltr;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
 }
 
-main {
-    width: 1vh;
-    flex-grow: 1;
-    flex-shrink: 0;
-    margin: 0 auto;
+html,
+body {
     width: 100%;
+    height: 100%;
+}
+
+:root {
+    font-size: 16px;
+
+    --accent-color: #FF3939;
+    --accent-color-hover: #ff5858;
+
+    --color-level-1: #0e0e0e;
+    --color-level-2: #1E1E1E;
+    --color-level-3: #2C2C2C;
+    --color-level-4: #3D3D3D;
+    --color-level-5: #525252;
+    --color-level-6: #7D7D7D;
+    --color-level-7: #b8b8b8;
+    --color-level-8: #dcdcdc;
+    --color-level-9: #fff;
+
+    --light-accent: #ffffff22;
+}
+
+.parallax-group {
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+.parallax-group.full {
+    height: 100%;
+}
+
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }

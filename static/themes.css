@@ -1,11 +1,15 @@
 .dark {
-    --background-main: #242424;
-    --background-secondary: #383838;
-    --text-main: #fff;
+    --background-main: var(--color-level-3);
+    --background-secondary: var(--color-level-4);
+    --background-tertiary: var(--color-level-5);
+    --interactable-main: var(--color-level-8);
+    --interactable-disabled: var(--color-level-6)
 }
 
 .light {
-    --background-main: #fff;
-    --background-secondary: #cacaca;
-    --text-main: #242424f2;
+    --background-main: var(--color-level-9);
+    --background-secondary: var(--color-level-8);
+    --background-tertiary: var(--color-level-7);
+    --interactable-main: var(--color-level-3);
+    --interactable-disabled: var(--color-level-6)
 }
