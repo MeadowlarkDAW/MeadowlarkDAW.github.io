@@ -1,0 +1,11 @@
+.dark {
+    --background-main: #242424;
+    --background-secondary: #383838;
+    --text-main: #fff;
+}
+
+.light {
+    --background-main: #fff;
+    --background-secondary: #cacaca;
+    --text-main: #242424f2;
+}
