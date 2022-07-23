@@ -1,5 +1,0 @@
-baseURL = 'https://meadowlark.app/'
-languageCode = 'en-us'
-title = 'Meadowlark'
-
-publishDir = './docs'
