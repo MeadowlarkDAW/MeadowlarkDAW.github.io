@@ -1,5 +1,8 @@
 import { Theme } from "$lib/theme";
-import { writable } from "svelte/store";
+import { readable, writable } from "svelte/store";
+
+import features from "$lib/features.json";
+import type { Feature } from "./types";
 
 function createTheme() {
     const { subscribe, set, update } = writable(Theme.Dark);
@@ -13,4 +16,5 @@ function createTheme() {
     }
 }
 
-export let theme = createTheme()
+export const theme = createTheme()
+export const sfeatures = readable(features as Feature[]) 

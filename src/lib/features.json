@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Some Huge Feature",
+        "prompt": "Upcoming Feature",
+        "promptColor": "red",
+        "text": "This is where you guys talk about a feature you really enjoyed developing and stuff. It is really cool because it is built by the community and it is really interesting.",
+        "img": "flight.png"
+    },
+    {
+        "title": "Some Huge Feature",
+        "prompt": "Upcoming Feature",
+        "promptColor": "purple",
+        "text": "This is where you guys talk about a feature you really enjoyed developing and stuff. It is really cool because it is built by the community and it is really interesting.",
+        "img": "flight.png"
+    },
+    {
+        "title": "Some Huge Feature",
+        "prompt": "Upcoming Feature",
+        "promptColor": "blue",
+        "text": "This is where you guys talk about a feature you really enjoyed developing and stuff. It is really cool because it is built by the community and it is really interesting.",
+        "img": "flight.png"
+    }
+]

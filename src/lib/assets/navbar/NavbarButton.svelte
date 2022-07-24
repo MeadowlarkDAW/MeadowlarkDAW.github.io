@@ -25,9 +25,7 @@
                 logoId={icon}
                 height="1.5rem"
                 width="1.5rem"
-                fill={logoHover
-                    ? "var(--accent-color)"
-                    : "var(--interactable-main)"}
+                fill={logoHover ? "var(--accent-color)" : "var(--text-idle)"}
             />
         </div>
     {/if}

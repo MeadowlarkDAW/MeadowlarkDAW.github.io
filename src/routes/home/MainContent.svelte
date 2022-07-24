@@ -1,27 +1,29 @@
 <script>
-    import { text } from "svelte/internal";
+    import Logo from "$lib/assets/logos/Logo.svelte";
+    import { Logos } from "$lib/assets/logos/logos";
     import MainContentButton from "./MainContentButton.svelte";
 </script>
 
 <div class="parallax-layer img-background" />
 <div class="parallax-layer front">
     <div class="main-content">
-        <h1 id="main-content-title">MEADOWLARK</h1>
+        <div class="main-content-title-wrapper">
+            <h1 class="main-content-title">MEAD</h1>
+            <Logo
+                fill="var(--color-level-9)"
+                logoId={Logos.MeadowlarkCircled}
+                height="3.2rem"
+                width="3.2rem"
+            />
+            <h1 class="main-content-title">WLARK</h1>
+        </div>
         <p id="main-content-subtitle">
             Meadowlark is a (currently incomplete) project that aims to be a
             FREE and open-source DAW for Linux, Mac and Windows.
         </p>
         <div id="main-content-buttons">
-            <MainContentButton
-                text="Download"
-                textColor="var(--color-level-9)"
-                textColorHover="var(--color-level-8)"
-            />
-            <MainContentButton
-                text="Documentation"
-                color="var(--background-main)"
-                hoverColor="var(--background-secondary)"
-            />
+            <MainContentButton text="Download" accented={true} />
+            <MainContentButton text="Documentation" />
         </div>
     </div>
 </div>
@@ -38,7 +40,15 @@
         padding-bottom: 8rem;
     }
 
-    #main-content-title {
+    .main-content-title-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 0.2rem;
+    }
+
+    .main-content-title {
         text-align: center;
         font-family: SUIT;
         font-size: 4rem;

@@ -1,41 +1,50 @@
 <script lang="ts">
-    export let color = "var(--accent-color)";
-    export let hoverColor = "var(--accent-color-hover)";
-    export let text = "button";
-    export let textColor: string = "";
-    export let textColorHover: string = "";
-
-    $: hover = false;
+    export let text = "Button";
+    export let accented = false;
 </script>
 
-<div
-    on:click
-    class="main-content-button"
-    style="background: {hover ? hoverColor : color};"
-    on:mouseenter={() => (hover = true)}
-    on:mouseleave={() => (hover = false)}
->
-    <p
-        style="color: {hover
-            ? textColor == ''
-                ? 'var(--interactable-main)'
-                : textColor
-            : textColorHover == ''
-            ? 'var(--interactable-disabled)'
-            : textColorHover};"
-    >
-        {text}
-    </p>
+<div on:click class="main-content-button {accented ? 'accented' : ''}">
+    <p>{text}</p>
 </div>
 
 <style>
     .main-content-button {
-        border: 1px solid var(--light-accent);
         border-radius: 2rem;
         cursor: pointer;
+        border: 1px solid var(--interactable-idle-border);
+        background-color: var(--interactable-idle);
+    }
+
+    .main-content-button:hover {
+        border: 1px solid var(--interactable-active-border);
+        background-color: var(--interactable-active);
     }
 
     .main-content-button p {
+        color: var(--text-idle);
         padding: 0.5rem 1rem;
+    }
+
+    .main-content-button:hover p {
+        color: var(--text-active);
+    }
+
+    /* Accented */
+    .main-content-button.accented {
+        border: 1px solid var(--accent-lighter);
+        background-color: var(--accent-color);
+    }
+
+    .main-content-button.accented:hover {
+        border: 1px solid var(--accent-lighter);
+        background-color: var(--accent-lighter);
+    }
+
+    .main-content-button.accented p {
+        color: var(--color-level-8);
+    }
+
+    .main-content-button.accented:hover p {
+        color: var(--color-level-9);
     }
 </style>

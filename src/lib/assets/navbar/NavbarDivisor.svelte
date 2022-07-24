@@ -3,7 +3,7 @@
 <style>
     .line {
         height: 1.5rem;
-        width: 2px;
+        width: 1px;
         background-color: var(--background-secondary);
     }
 </style>

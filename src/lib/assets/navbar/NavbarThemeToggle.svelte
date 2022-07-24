@@ -25,15 +25,16 @@
     .navbar-theme-toggle {
         width: 2.5rem;
         height: 1.5rem;
-        border: 0.1rem solid var(--interactable-disabled);
+        border: 0.1rem solid var(--interactable-idle-border);
+        background-color: var(--interactable-idle);
         border-radius: 1.5rem;
-        background-color: var(--background-secondary);
         cursor: pointer;
         box-sizing: content-box;
     }
 
     .navbar-theme-toggle:hover {
-        border: 0.1rem solid var(--interactable-main);
+        border: 0.1rem solid var(--interactable-active-border);
+        background-color: var(--interactable-active);
     }
 
     .navbar-theme-toggle-handle {
