@@ -39,7 +39,7 @@
 
 <style>
     .main {
-        height: 120%;
+        height: 90%;
     }
     .app {
         width: 100%;
@@ -90,5 +90,11 @@
             transparent 60%
         );
         transform: translateZ(-150px) scale(1.5);
+    }
+
+    @media screen and (min-width: 80rem) {
+        .main {
+            height: 120%;
+        }
     }
 </style>

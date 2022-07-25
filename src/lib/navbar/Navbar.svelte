@@ -37,6 +37,8 @@
     .navbar {
         width: 100%;
 
+        height: 4rem;
+
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -59,12 +61,12 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        padding: 0rem 1rem;
     }
 
     .navbar-logo {
-        width: 3.5rem;
-        height: 3.5rem;
-        padding: 1rem;
+        width: 2rem;
+        height: 2rem;
     }
 
     .navbar-right {

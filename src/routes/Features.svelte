@@ -29,7 +29,7 @@
         width: 100%;
         max-width: 70rem;
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(1, minmax(0, 1fr));
         padding: 2rem 0rem;
         gap: 2rem;
     }
@@ -48,5 +48,17 @@
         max-width: 70rem;
         margin: 2rem 0rem;
         background: var(--background-secondary);
+    }
+
+    @media screen and (min-width: 35rem) {
+        .features-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @media screen and (min-width: 80rem) {
+        .features-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
     }
 </style>

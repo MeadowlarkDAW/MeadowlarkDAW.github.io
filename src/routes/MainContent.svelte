@@ -37,7 +37,7 @@
 <style>
     .main-content {
         height: 100%;
-        max-width: 600px;
+        max-width: 28rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -57,7 +57,7 @@
     .main-content-title {
         text-align: center;
         font-family: SUIT;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 900;
         line-height: 5rem;
         color: var(--text-active);
@@ -96,11 +96,32 @@
     }
 
     .img-background {
-        width: 65rem;
-        height: 36.5rem;
+        width: 30rem;
+        height: 16.8rem;
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
         margin-top: 26rem;
+    }
+
+    @media screen and (min-width: 35rem) {
+        .img-background {
+            width: 40rem;
+            height: 22.5rem;
+        }
+
+        .main-content {
+            max-width: 38rem;
+        }
+        .main-content-title {
+            font-size: 4rem;
+        }
+    }
+
+    @media screen and (min-width: 80rem) {
+        .img-background {
+            width: 65rem;
+            height: 36.5rem;
+        }
     }
 </style>

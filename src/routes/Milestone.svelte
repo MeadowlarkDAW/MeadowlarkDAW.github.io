@@ -59,7 +59,6 @@
     }
 
     .milestone-name {
-        width: 20rem;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
