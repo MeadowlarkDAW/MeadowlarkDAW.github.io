@@ -61,7 +61,6 @@
 
     #main-content-subtitle {
         text-align: center;
-        font-family: Min Sans;
         line-clamp: 2;
         color: var(--text-idle);
         padding-top: 1rem;

@@ -73,11 +73,13 @@
     }
 
     .feature-prompt p {
-        padding: 0.25rem 0.5rem;
+        padding: 0rem 0.5rem;
         font-family: SUIT;
+        color: var(--color-level-3);
         font-weight: 900;
         font-size: 1rem;
         width: fit-content;
+        text-transform: uppercase;
     }
 
     .feature-img {

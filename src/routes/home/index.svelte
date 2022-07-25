@@ -1,4 +1,6 @@
 <script>
+    // @ts-nocheck
+
     import Navbar from "$lib/navbar/Navbar.svelte";
 
     import { theme } from "$lib/stores";
@@ -6,6 +8,15 @@
     import Features from "./Features.svelte";
     import MainContent from "./MainContent.svelte";
 </script>
+
+<svelte:head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    />
+</svelte:head>
 
 <div class="app {themeToString($theme)}">
     <Navbar />
@@ -47,6 +58,7 @@
         overflow-x: hidden;
         perspective: 300px;
         background-color: var(--contrast);
+        transition: none;
         display: block;
     }
 
@@ -59,8 +71,8 @@
 
     .f1 {
         background: linear-gradient(
-            var(--background-decor) 0%,
-            var(--contrast) 100%
+            var(--contrast) 0%,
+            var(--background-decor) 100%
         );
         transform: translateZ(-200px) scale(1.25) rotate(-20deg)
             translate(15rem, 50rem);
@@ -69,8 +81,8 @@
 
     .f2 {
         background: linear-gradient(
-            var(--background-decor) -25%,
-            var(--contrast) 75%
+            var(--contrast) 0%,
+            var(--background-decor) 125%
         );
         transform: translateZ(-400px) scale(1.5) rotate(-25deg)
             translate(15rem, 40rem);
@@ -79,8 +91,8 @@
 
     .f3 {
         background: linear-gradient(
-            var(--background-decor) -50%,
-            var(--contrast) 50%
+            var(--contrast) 0%,
+            var(--background-decor) 150%
         );
         transform: translateZ(-600px) scale(1.75) rotate(-30deg)
             translate(15rem, 30rem);
@@ -89,8 +101,8 @@
 
     .f4 {
         background: linear-gradient(
-            var(--background-decor) -75%,
-            var(--contrast) 25%
+            var(--contrast) 0%,
+            var(--background-decor) 185%
         );
         transform: translateZ(-800px) scale(2) rotate(-35deg)
             translate(15rem, 20rem);
@@ -99,8 +111,8 @@
 
     .d1 {
         background: linear-gradient(
-            var(--accent-color) 0%,
-            var(--contrast) 100%
+            var(--contrast) 0%,
+            var(--accent-color) 100%
         );
         transform: translateZ(-150px) scale(1.2) rotate(20deg)
             translate(-5rem, 80rem);
@@ -109,8 +121,8 @@
 
     .d2 {
         background: linear-gradient(
-            var(--accent-color) -25%,
-            var(--contrast) 75%
+            var(--contrast) 0%,
+            var(--accent-color) 125%
         );
         transform: translateZ(-300px) scale(1.6) rotate(35deg)
             translate(-10rem, 70rem);
@@ -119,8 +131,8 @@
 
     .d3 {
         background: linear-gradient(
-            var(--accent-color) -50%,
-            var(--contrast) 50%
+            var(--contrast) 0%,
+            var(--accent-color) 150%
         );
         transform: translateZ(-450px) scale(2.1) rotate(50deg)
             translate(-15rem, 60rem);
@@ -129,8 +141,8 @@
 
     .d4 {
         background: linear-gradient(
-            var(--accent-color) -75%,
-            var(--contrast) 25%
+            var(--contrast) 0%,
+            var(--accent-color) 175%
         );
         transform: translateZ(-600px) scale(2.8) rotate(65deg)
             translate(-20rem, 50rem);
