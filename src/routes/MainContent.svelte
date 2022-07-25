@@ -29,7 +29,10 @@
                 text="GitHub"
                 link="https://github.com/MeadowlarkDAW/Meadowlark"
             />
-            <MainContentButton text="Learn More" link="" />
+            <MainContentButton
+                text="Learn More"
+                link="https://www.youtube.com/watch?v=p7YXXieghto"
+            />
         </div>
     </div>
 </div>

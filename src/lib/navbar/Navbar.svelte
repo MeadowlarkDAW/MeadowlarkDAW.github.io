@@ -14,7 +14,10 @@
         />
         <div class="navbar-right">
             <NavbarButton text="Features" link="#features" />
-            <NavbarButton text="Blog" link="" />
+            <NavbarButton
+                text="Blog"
+                link="https://github.com/MeadowlarkDAW/Meadowlark"
+            />
             <NavbarButton text="Download" link="" />
             <NavbarDivisor />
             <NavbarThemeToggle />
