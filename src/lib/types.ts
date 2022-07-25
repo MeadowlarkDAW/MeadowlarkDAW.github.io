@@ -1,7 +1,12 @@
 export interface Feature {
     title: string,
-    prompt: string,
-    promptColor: string,
     text: string,
-    img: string
+    svg: string
+}
+
+export interface Milestone {
+    name: string,
+    description: string,
+    expected: string
+    color: string
 }

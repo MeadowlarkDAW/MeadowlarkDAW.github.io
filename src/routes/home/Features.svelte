@@ -1,52 +1,52 @@
 <script lang="ts">
-    import { sfeatures } from "$lib/stores";
+    import { features } from "$lib/stores";
     import FeatureBlock from "./FeatureBlock.svelte";
 </script>
 
-<div class="parallax-layer features-background" />
-<div class="parallax-layer front">
-    <div class="features">
-        {#each $sfeatures as { title, prompt, promptColor, text, img }, i}
-            <FeatureBlock
-                {title}
-                {prompt}
-                {promptColor}
-                {text}
-                {img}
-                flipped={i % 2 == 1}
-            />
+<div class="features">
+    <h1>Main features</h1>
+    <div class="divisor" />
+    <div class="features-grid">
+        {#each $features as { title, text, svg }}
+            <FeatureBlock {title} {text} {svg} />
         {/each}
     </div>
 </div>
 
 <style>
-    .features-background {
-        transform: translateZ(-60px) scale(1.25);
-        z-index: 1;
-        background: var(--background-main);
-        height: 100%;
-    }
-
-    .front {
-        transform: translateZ(0) scale(1);
-        z-index: 100;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
     .features {
         width: 100%;
-        height: 100%;
-        max-width: 60rem;
+
+        background: var(--background-main);
+        padding: 2rem;
 
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+    }
 
+    .features-grid {
+        width: 100%;
+        max-width: 70rem;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        padding: 2rem 0rem;
         gap: 2rem;
+    }
+
+    h1 {
+        font-family: SUIT;
+        font-weight: 700;
+        font-size: 2.5rem;
+
+        padding: 2rem 0rem;
+    }
+
+    .divisor {
+        width: 100%;
+        height: 1px;
+        max-width: 70rem;
+        margin: 2rem 0rem;
+        background: var(--background-secondary);
     }
 </style>

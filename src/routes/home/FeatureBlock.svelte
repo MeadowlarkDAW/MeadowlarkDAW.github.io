@@ -1,98 +1,56 @@
 <script lang="ts">
+    import Logo from "$lib/assets/logos/Logo.svelte";
+    import { Logos, stringToLogos } from "$lib/assets/logos/logos";
+
     export let title = "";
-    export let prompt = "";
-    export let promptColor = "";
     export let text = "";
-    export let img = "";
-    export let flipped = false;
+    export let svg = "None";
 </script>
 
-{#if flipped}
-    <div class="feature-block flipped">
-        <img class="feature-img" src={img} alt={img} />
-        <div class="feature-about">
-            <div
-                class="feature-prompt"
-                style="background-color: {promptColor};"
-            >
-                <p>{prompt}</p>
-            </div>
-            <h2 class="feature-title">{title}</h2>
-            <p class="feature-text">{text}</p>
-        </div>
+<div class="feature-block">
+    <div class="logo-wrapper">
+        <Logo
+            logoId={stringToLogos(svg)}
+            fill="var(--text-active)"
+            height="4rem"
+            width="4rem"
+        />
     </div>
-{:else}
-    <div class="feature-block">
-        <div class="feature-about">
-            <div
-                class="feature-prompt"
-                style="background-color: {promptColor};"
-            >
-                <p>{prompt}</p>
-            </div>
-            <h2 class="feature-title">{title}</h2>
-            <p class="feature-text">{text}</p>
-        </div>
-        <img class="feature-img" src={img} alt={img} />
-    </div>
-{/if}
+    <h2>{@html title}</h2>
+    <p class="feature-text">{@html text}</p>
+</div>
 
 <style>
     .feature-block {
+        padding: 2rem;
+
         display: flex;
-        flex-direction: row;
-        padding: 1rem 0 1rem 0;
-        align-items: flex-start;
-        gap: 1rem;
+        flex-direction: column;
+
+        background-color: var(--background-secondary);
+        border-radius: 0.5rem;
+
+        gap: 0.5rem;
     }
 
-    .feature-block.flipped .feature-about {
-        align-items: flex-end;
-    }
-
-    .feature-block.flipped .feature-about .feature-text {
-        text-align: end;
+    .logo-wrapper {
+        width: 100%;
+        box-sizing: content-box;
+        border-radius: 0.5rem;
+        display: grid;
+        place-items: center;
+        padding: 1rem 0rem;
     }
 
     .feature-text {
         text-align: start;
     }
 
-    .feature-about {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem 0 1rem 0;
-        gap: 0.5rem;
-        height: 100%;
-    }
-
-    .feature-prompt {
-        width: fit-content;
-        border-radius: 3rem;
-    }
-
-    .feature-prompt p {
-        padding: 0rem 0.5rem;
-        font-family: SUIT;
-        color: var(--color-level-3);
-        font-weight: 900;
-        font-size: 1rem;
-        width: fit-content;
-        text-transform: uppercase;
-    }
-
-    .feature-img {
-        width: 25rem;
-        height: 15rem;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .feature-title {
+    h2 {
+        height: fit-content;
         font-family: SUIT;
         font-weight: 700;
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
     }
 </style>

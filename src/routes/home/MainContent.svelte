@@ -38,7 +38,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        padding-top: 5rem;
+        padding-top: 8rem;
         margin: auto;
     }
 
@@ -82,7 +82,7 @@
     }
 
     .img-wrapper {
-        transform: translateZ(-100px) scale(1.25);
+        transform: translateZ(-50px) scale(1.125);
         z-index: 1;
 
         display: flex;
@@ -97,6 +97,6 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        margin-top: 23rem;
+        margin-top: 26rem;
     }
 </style>

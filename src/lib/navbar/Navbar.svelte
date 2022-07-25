@@ -43,8 +43,9 @@
         justify-content: center;
         align-items: center;
 
-        background-color: var(--background-main);
-        position: sticky;
+        background: var(--background-main);
+        position: absolute;
+        filter: drop-shadow(0rem 0.1rem 4px #00000022);
 
         z-index: 999;
 

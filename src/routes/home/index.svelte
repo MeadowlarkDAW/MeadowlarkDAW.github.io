@@ -22,18 +22,12 @@
     <Navbar />
     <div class="home">
         <div class="parallax-group main">
-            <div class="parallax-layer decor f1" />
-            <div class="parallax-layer decor f2" />
-            <div class="parallax-layer decor f3" />
-            <div class="parallax-layer decor f4" />
-            <div class="parallax-layer decor d1" />
-            <div class="parallax-layer decor d2" />
-            <div class="parallax-layer decor d3" />
-            <div class="parallax-layer decor d4" />
-            <!-- <div class="parallax-layer decor-2" /> -->
+            <div class="parallax-layer decor decor-1" />
+            <div class="parallax-layer decor decor-2" />
+            <div class="parallax-layer decor decor-3" />
             <MainContent />
         </div>
-        <div class="parallax-group">
+        <div class="parallax-group features">
             <Features />
         </div>
     </div>
@@ -41,18 +35,20 @@
 
 <style>
     .main {
-        height: 140%;
+        height: 120%;
     }
     .app {
         width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
+        position: absolute;
+    }
+
+    .features {
+        height: 65%;
     }
 
     .home {
+        position: absolute;
         width: 100%;
         height: 100%;
         overflow-x: hidden;
@@ -65,87 +61,34 @@
     .decor {
         position: absolute;
 
-        width: 200%;
-        height: 30rem;
+        width: 100%;
+        height: 100%;
     }
 
-    .f1 {
-        background: linear-gradient(
-            var(--contrast) 0%,
-            var(--background-decor) 100%
+    .decor-1 {
+        background: radial-gradient(
+            ellipse at top right,
+            var(--header-color-2) 0%,
+            transparent 80%
         );
-        transform: translateZ(-200px) scale(1.25) rotate(-20deg)
-            translate(15rem, 50rem);
-        z-index: 12;
+        transform: translateZ(-250px) scale(2);
     }
 
-    .f2 {
-        background: linear-gradient(
-            var(--contrast) 0%,
-            var(--background-decor) 125%
+    .decor-2 {
+        background: radial-gradient(
+            ellipse at top left,
+            var(--header-color-1) 0%,
+            transparent 60%
         );
-        transform: translateZ(-400px) scale(1.5) rotate(-25deg)
-            translate(15rem, 40rem);
-        z-index: 12;
+        transform: translateZ(-350px) scale(3);
     }
 
-    .f3 {
-        background: linear-gradient(
+    .decor-3 {
+        background: radial-gradient(
+            ellipse at bottom,
             var(--contrast) 0%,
-            var(--background-decor) 150%
+            transparent 60%
         );
-        transform: translateZ(-600px) scale(1.75) rotate(-30deg)
-            translate(15rem, 30rem);
-        z-index: 12;
-    }
-
-    .f4 {
-        background: linear-gradient(
-            var(--contrast) 0%,
-            var(--background-decor) 185%
-        );
-        transform: translateZ(-800px) scale(2) rotate(-35deg)
-            translate(15rem, 20rem);
-        z-index: 12;
-    }
-
-    .d1 {
-        background: linear-gradient(
-            var(--contrast) 0%,
-            var(--accent-color) 100%
-        );
-        transform: translateZ(-150px) scale(1.2) rotate(20deg)
-            translate(-5rem, 80rem);
-        z-index: 12;
-    }
-
-    .d2 {
-        background: linear-gradient(
-            var(--contrast) 0%,
-            var(--accent-color) 125%
-        );
-        transform: translateZ(-300px) scale(1.6) rotate(35deg)
-            translate(-10rem, 70rem);
-        z-index: 12;
-    }
-
-    .d3 {
-        background: linear-gradient(
-            var(--contrast) 0%,
-            var(--accent-color) 150%
-        );
-        transform: translateZ(-450px) scale(2.1) rotate(50deg)
-            translate(-15rem, 60rem);
-        z-index: 12;
-    }
-
-    .d4 {
-        background: linear-gradient(
-            var(--contrast) 0%,
-            var(--accent-color) 175%
-        );
-        transform: translateZ(-600px) scale(2.8) rotate(65deg)
-            translate(-20rem, 50rem);
-        z-index: 12;
+        transform: translateZ(-150px) scale(1.5);
     }
 </style>

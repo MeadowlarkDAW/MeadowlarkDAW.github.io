@@ -1,23 +1,32 @@
 [
     {
-        "title": "Some Huge Feature",
-        "prompt": "Beta v0.1",
-        "promptColor": "#F54E47",
-        "text": "This is where you guys talk about a feature you really enjoyed developing and stuff. It is really cool because it is built by the community and it is really interesting.",
-        "img": "flight.png"
+        "title": "Free & Open Source <span>Forever</span>",
+        "text": "No paywalls, micro-transactions, free trials, locked features, or paying for pre-built binaries.",
+        "svg": "OpenSource"
     },
     {
-        "title": "Other Cool Feature",
-        "prompt": "Beta v0.2",
-        "promptColor": "#F5E65F",
-        "text": "This is where you guys talk about a feature you really enjoyed developing and stuff. It is really cool because it is built by the community and it is really interesting.",
-        "img": "flight.png"
+        "title": "<span>Parameter fiesta</span>",
+        "text": "Assign macros, LFOs, and envelopes to any parameter. ",
+        "svg": "OpenSource"
     },
     {
-        "title": "Yet Another Feature",
-        "prompt": "Upcoming Feature",
-        "promptColor": "#4292ED",
-        "text": "This is where you guys talk about a feature you really enjoyed developing and stuff. It is really cool because it is built by the community and it is really interesting.",
-        "img": "flight.png"
+        "title": "Meant to be <span>Flexible</span>",
+        "text": "Easy FX chains, flexible grouping and sends anywhere! Organize your project however you like!",
+        "svg": "OpenSource"
+    },
+    {
+        "title": "Wide <span>Plugin Support</span>",
+        "text": "First-class support for the powerful and open-source CLAP plugin format. VST/VST3 plugins are supported as well.",
+        "svg": "OpenSource"
+    },
+    {
+        "title": "<span>Customize</span> the uncustomizable",
+        "text": "Fully themeable UI to fit your mood and taste. Create and share your own themes for Meadowlark!",
+        "svg": "OpenSource"
+    },
+    {
+        "title": "Built with <span>Love</span>",
+        "text": "Meadowlark is built by a passionate team of musicians who want better and accessible tools for everyone.",
+        "svg": "OpenSource"
     }
 ]

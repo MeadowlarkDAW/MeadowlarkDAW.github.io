@@ -1,8 +1,9 @@
 import { Theme } from "$lib/theme";
 import { readable, writable } from "svelte/store";
 
-import features from "$lib/features.json";
-import type { Feature } from "./types";
+import sfeatures from "$lib/features.json";
+import smilestones from "$lib/milestones.json";
+import type { Feature, Milestone } from "./types";
 
 function createTheme() {
     const { subscribe, set, update } = writable(Theme.Dark);
@@ -17,4 +18,5 @@ function createTheme() {
 }
 
 export const theme = createTheme()
-export const sfeatures = readable(features as Feature[]) 
+export const features = readable(sfeatures as Feature[])
+export const milestones = readable(smilestones as Milestone[]) 

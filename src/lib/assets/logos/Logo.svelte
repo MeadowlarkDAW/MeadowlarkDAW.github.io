@@ -15,7 +15,7 @@
         if (size.includes("rem")) {
             size.replace("rem", "");
             let unit = parseFloat(size);
-            return unit * 16.0;
+            return (unit * 16.0).toString() + "px";
         }
     };
 </script>
