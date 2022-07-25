@@ -7,6 +7,7 @@
     import { themeToString } from "$lib/theme";
     import Features from "./Features.svelte";
     import MainContent from "./MainContent.svelte";
+    import Milestones from "./Milestones.svelte";
 </script>
 
 <svelte:head>
@@ -27,8 +28,11 @@
             <div class="parallax-layer decor decor-3" />
             <MainContent />
         </div>
-        <div class="parallax-group features">
+        <div class="parallax-group">
             <Features />
+        </div>
+        <div class="parallax-group">
+            <Milestones />
         </div>
     </div>
 </div>
@@ -41,10 +45,6 @@
         width: 100%;
         height: 100%;
         position: absolute;
-    }
-
-    .features {
-        height: 65%;
     }
 
     .home {
