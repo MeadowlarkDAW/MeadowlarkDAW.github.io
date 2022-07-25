@@ -86,3 +86,7 @@ span {
     font-weight: 700;
     filter: brightness(125%);
 }
+
+a {
+    text-decoration: none;
+}

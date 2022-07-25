@@ -13,9 +13,8 @@
             alt="meadowlark logo"
         />
         <div class="navbar-right">
-            <NavbarButton text="Home" link="#home" />
-            <NavbarButton text="News" link="" />
             <NavbarButton text="Features" link="#features" />
+            <NavbarButton text="Blog" link="" />
             <NavbarButton text="Download" link="" />
             <NavbarDivisor />
             <NavbarThemeToggle />

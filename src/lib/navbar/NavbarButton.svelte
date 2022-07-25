@@ -4,7 +4,7 @@
 
     export let icon: Logos = Logos.None;
     export let text: string = "Button";
-    export let link: string;
+    export let link: string = "";
 
     $: logoHover = false;
 </script>

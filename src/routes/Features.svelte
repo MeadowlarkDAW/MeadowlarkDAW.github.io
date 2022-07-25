@@ -3,7 +3,7 @@
     import FeatureBlock from "./FeatureBlock.svelte";
 </script>
 
-<div class="features">
+<div class="features" id="features">
     <h1>Main features</h1>
     <div class="divisor" />
     <div class="features-grid">

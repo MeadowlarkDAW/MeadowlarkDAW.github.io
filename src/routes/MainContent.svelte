@@ -21,11 +21,15 @@
         </div>
         <p id="main-content-subtitle">
             Meadowlark is a (currently incomplete) project that aims to be a
-            FREE and open-source DAW for Linux, Mac and Windows.
+            FREE and open-source DAW for Linux, Mac and Windows. Help us release
+            it by contributing on GitHub!
         </p>
         <div id="main-content-buttons">
-            <MainContentButton text="Download" accented={true} />
-            <MainContentButton text="Documentation" />
+            <MainContentButton
+                text="GitHub"
+                link="https://github.com/MeadowlarkDAW/Meadowlark"
+            />
+            <MainContentButton text="Learn More" link="" />
         </div>
     </div>
 </div>

@@ -1,11 +1,14 @@
 <script lang="ts">
     export let text = "Button";
     export let accented = false;
+    export let link: string;
 </script>
 
-<div on:click class="main-content-button {accented ? 'accented' : ''}">
-    <p>{text}</p>
-</div>
+<a href={link}>
+    <div on:click class="main-content-button {accented ? 'accented' : ''}">
+        <p>{text}</p>
+    </div>
+</a>
 
 <style>
     .main-content-button {
