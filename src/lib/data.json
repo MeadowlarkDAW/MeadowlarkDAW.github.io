@@ -1,0 +1,107 @@
+{
+    "navbarButtons": [
+        {
+            "text": "Features",
+            "link": "#features"
+        },
+        {
+            "text": "Blog",
+            "link": "https://github.com/MeadowlarkDAW/Meadowlark"
+        },
+        {
+            "text": "divisor",
+            "link": ""
+        },
+        {
+            "text": "themeToggle",
+            "link": ""
+        },
+        {
+            "text": "divisor",
+            "link": ""
+        },
+        {
+            "text": "discord",
+            "link": "https://discord.gg/2W3Xvc8wy4",
+            "icon": "Discord"
+        },
+        {
+            "text": "github",
+            "link": "https://github.com/MeadowlarkDAW/Meadowlark",
+            "icon": "Github"
+        }
+    ],
+    "mainContentButtons": [
+        {
+            "text": "Github",
+            "link": "https://github.com/MeadowlarkDAW/Meadowlark"
+        },
+        {
+            "text": "Learn More",
+            "link": "https://www.youtube.com/watch?v=p7YXXieghto"
+        }
+    ],
+    "mainContentSubtext": "Meadowlark is a (currently incomplete) project that aims to be a FREE and open-source DAW for Linux, Mac and Windows. Help us release it by contributing on GitHub!",
+    "features": [
+        {
+            "title": "Free & Open Source <span>Forever</span>",
+            "text": "No paywalls, micro-transactions, free trials, locked features, or paying for pre-built binaries.",
+            "svg": "OpenSource"
+        },
+        {
+            "title": "<span>Parameter fiesta</span>",
+            "text": "Assign macros, LFOs, and envelopes to any parameter. ",
+            "svg": "OpenSource"
+        },
+        {
+            "title": "Meant to be <span>Flexible</span>",
+            "text": "Easy FX chains, flexible grouping and sends anywhere! Organize your project however you like!",
+            "svg": "OpenSource"
+        },
+        {
+            "title": "Wide <span>Plugin Support</span>",
+            "text": "First-class support for the powerful and open-source CLAP plugin format. VST/VST3 plugins are supported as well.",
+            "svg": "OpenSource"
+        },
+        {
+            "title": "<span>Customize</span> the uncustomizable",
+            "text": "Fully themeable UI to fit your mood and taste. Create and share your own themes for Meadowlark!",
+            "svg": "OpenSource"
+        },
+        {
+            "title": "Built with <span>Love</span>",
+            "text": "Meadowlark is built by a passionate team of musicians who want better and accessible tools for everyone.",
+            "svg": "OpenSource"
+        }
+    ],
+    "roadmap": [
+        {
+            "name": "Release v1.0",
+            "description": "Version 1.0 of Meadowlark!",
+            "expected": "Infinity",
+            "color": "red",
+            "icon": "OpenSource"
+        },
+        {
+            "name": "Release v1.0",
+            "description": "Version 1.0 of Meadowlark!",
+            "expected": "Infinity",
+            "color": "red",
+            "icon": "OpenSource"
+        },
+        {
+            "name": "Release v1.0",
+            "description": "Version 1.0 of Meadowlark!",
+            "expected": "Infinity",
+            "color": "red",
+            "icon": "OpenSource"
+        },
+        {
+            "name": "Release v1.0",
+            "description": "Version 1.0 of Meadowlark!",
+            "expected": "Infinity",
+            "color": "red",
+            "icon": "OpenSource"
+        }
+    ]
+}

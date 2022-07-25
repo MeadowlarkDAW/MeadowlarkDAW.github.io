@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { milestones } from "$lib/stores";
+    import { data } from "$lib/stores";
     import FeatureBlock from "./FeatureBlock.svelte";
     import Milestone from "./Milestone.svelte";
 </script>
@@ -8,7 +8,7 @@
     <h1>Roadmap</h1>
     <div class="divisor" />
     <div class="milestones-list">
-        {#each $milestones as { name, description, expected, color, icon }, i}
+        {#each $data.roadmap as { name, description, expected, color, icon }, i}
             <Milestone
                 {name}
                 {description}

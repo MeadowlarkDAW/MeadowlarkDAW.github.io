@@ -1,7 +1,8 @@
 <script>
     import Logo from "$lib/assets/logos/Logo.svelte";
-    import { Logos } from "$lib/assets/logos/logos";
+    import { Logos, stringToLogos } from "$lib/assets/logos/logos";
     import MainContentButton from "./MainContentButton.svelte";
+    import { data } from "$lib/stores";
 </script>
 
 <div class="parallax-layer img-wrapper">
@@ -19,20 +20,11 @@
             />
             <h1 class="main-content-title">WLARK</h1>
         </div>
-        <p id="main-content-subtitle">
-            Meadowlark is a (currently incomplete) project that aims to be a
-            FREE and open-source DAW for Linux, Mac and Windows. Help us release
-            it by contributing on GitHub!
-        </p>
+        <p id="main-content-subtitle">{$data.mainContentSubtext}</p>
         <div id="main-content-buttons">
-            <MainContentButton
-                text="GitHub"
-                link="https://github.com/MeadowlarkDAW/Meadowlark"
-            />
-            <MainContentButton
-                text="Learn More"
-                link="https://www.youtube.com/watch?v=p7YXXieghto"
-            />
+            {#each $data.mainContentButtons as { text, link }}
+                <MainContentButton {text} {link} />
+            {/each}
         </div>
     </div>
 </div>

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { features } from "$lib/stores";
+    import { data } from "$lib/stores";
     import FeatureBlock from "./FeatureBlock.svelte";
 </script>
 
@@ -7,7 +7,7 @@
     <h1>Main features</h1>
     <div class="divisor" />
     <div class="features-grid">
-        {#each $features as { title, text, svg }}
+        {#each $data.features as { title, text, svg }}
             <FeatureBlock {title} {text} {svg} />
         {/each}
     </div>

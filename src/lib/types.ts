@@ -11,3 +11,17 @@ export interface Milestone {
     color: string,
     icon: string,
 }
+
+export interface Button {
+    text: string,
+    link: string,
+    icon?: string
+}
+
+export interface Data {
+    navbarButtons: Button[],
+    mainContentButtons: Button[],
+    mainContentSubtext: string,
+    features: Feature[],
+    roadmap: Milestone[]
+}

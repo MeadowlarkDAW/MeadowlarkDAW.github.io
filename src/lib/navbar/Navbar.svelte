@@ -1,8 +1,9 @@
-<script>
+<script lang="ts">
     import NavbarButton from "./NavbarButton.svelte";
     import NavbarDivisor from "./NavbarDivisor.svelte";
-    import { Logos } from "$lib/assets/logos/logos";
+    import { stringToLogos } from "$lib/assets/logos/logos";
     import NavbarThemeToggle from "./NavbarThemeToggle.svelte";
+    import { data } from "$lib/stores";
 </script>
 
 <div class="navbar">
@@ -13,24 +14,17 @@
             alt="meadowlark logo"
         />
         <div class="navbar-right">
-            <NavbarButton text="Features" link="#features" />
-            <NavbarButton
-                text="Blog"
-                link="https://github.com/MeadowlarkDAW/Meadowlark"
-            />
-            <NavbarDivisor />
-            <NavbarThemeToggle />
-            <NavbarDivisor />
-            <NavbarButton
-                text="discord"
-                icon={Logos.Discord}
-                link="https://discord.gg/2W3Xvc8wy4"
-            />
-            <NavbarButton
-                text="github"
-                icon={Logos.Github}
-                link="https://github.com/MeadowlarkDAW/Meadowlark"
-            />
+            {#each $data.navbarButtons as { text, link, icon }}
+                {#if text == "divisor" && link == ""}
+                    <NavbarDivisor />
+                {:else if text === "themeToggle"}
+                    <NavbarThemeToggle />
+                {:else if icon !== undefined}
+                    <NavbarButton {text} {link} icon={stringToLogos(icon)} />
+                {:else}
+                    <NavbarButton {text} {link} />
+                {/if}
+            {/each}
         </div>
     </div>
 </div>
