@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Free & Open Source <span>Forever</span>",
+        "text": "No paywalls, micro-transactions, free trials, locked features, or paying for pre-built binaries.",
+        "svg": "OpenSource"
+    },
+    {
+        "title": "<span>Parameter fiesta</span>",
+        "text": "Assign macros, LFOs, and envelopes to any parameter. ",
+        "svg": "OpenSource"
+    },
+    {
+        "title": "Meant to be <span>Flexible</span>",
+        "text": "Easy FX chains, flexible grouping and sends anywhere! Organize your project however you like!",
+        "svg": "OpenSource"
+    },
+    {
+        "title": "Wide <span>Plugin Support</span>",
+        "text": "First-class support for the powerful and open-source CLAP plugin format. VST/VST3 plugins are supported as well.",
+        "svg": "OpenSource"
+    },
+    {
+        "title": "<span>Customize</span> the uncustomizable",
+        "text": "Fully themeable UI to fit your mood and taste. Create and share your own themes for Meadowlark!",
+        "svg": "OpenSource"
+    },
+    {
+        "title": "Built with <span>Love</span>",
+        "text": "Meadowlark is built by a passionate team of musicians who want better and accessible tools for everyone.",
+        "svg": "OpenSource"
+    }
+]
