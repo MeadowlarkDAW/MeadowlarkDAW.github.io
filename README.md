@@ -10,8 +10,7 @@ Once you've have cloned the repository do the following:
 # Install all the dependencies needed to run/build the project
 npm i
 
-# Execute the 'dev' macro, running the app in http://127.0.0.1:5173/home
-npm run dev
+# Execute the 'dev' macro, running the app in http://127.0.0.1:5173
 
 # or start the server and open the app in a new browser tab
 npm run dev -- --open
