@@ -18,7 +18,6 @@
                 text="Blog"
                 link="https://github.com/MeadowlarkDAW/Meadowlark"
             />
-            <NavbarButton text="Download" link="" />
             <NavbarDivisor />
             <NavbarThemeToggle />
             <NavbarDivisor />
