@@ -30,18 +30,9 @@
     }
 
     /* Accented */
-    .main-content-button.accented {
-        border: 1px solid var(--accent-lighter);
-        background-color: var(--accent-color);
-    }
-
     .main-content-button.accented:hover {
         border: 1px solid var(--accent-lighter);
-        background-color: var(--accent-lighter);
-    }
-
-    .main-content-button.accented p {
-        color: var(--color-level-8);
+        background-color: var(--accent-color);
     }
 
     .main-content-button.accented:hover p {

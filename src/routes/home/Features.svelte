@@ -20,26 +20,33 @@
 </div>
 
 <style>
+    .features-background {
+        transform: translateZ(-60px) scale(1.25);
+        z-index: 1;
+        background: var(--background-main);
+        height: 100%;
+    }
+
     .front {
         transform: translateZ(0) scale(1);
         z-index: 100;
-    }
 
-    .features-background {
-        transform: translateZ(-25px) scale(1.25);
-        z-index: 2;
-        background-color: var(--background-main);
-    }
-
-    .features {
-        width: 100%;
-        max-width: 1000px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: auto;
-        padding-bottom: 8rem;
+    }
+
+    .features {
+        width: 100%;
+        height: 100%;
+        max-width: 60rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
         gap: 2rem;
     }
 </style>

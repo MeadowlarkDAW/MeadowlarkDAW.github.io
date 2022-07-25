@@ -4,7 +4,7 @@
     --background-tertiary: var(--color-level-5);
     --background-decor: var(--color-level-3);
     --background-decor-darker: var(--color-level-1);
-
+    --contrast: var(--color-level-0);
 
     --interactable-active-border: var(--color-level-5);
     --interactable-idle-border: var(--color-level-4);
@@ -17,16 +17,17 @@
 }
 
 .light {
-    --background-main: var(--color-level-9);
-    --background-secondary: var(--color-level-8);
-    --background-tertiary: var(--color-level-7);
-    --background-decor: var(--color-level-7);
-    --background-decor-darker: var(--color-level-5);
+    --background-main: var(--color-level-8);
+    --background-secondary: var(--color-level-7);
+    --background-tertiary: var(--color-level-6);
+    --background-decor: var(--color-level-5);
+    --background-decor-darker: var(--color-level-4);
+    --contrast: var(--color-level-9);
 
-    --interactable-active-border: var(--color-level-7);
-    --interactable-idle-border: var(--color-level-8);
-    --interactable-active: var(--color-level-8);
-    --interactable-idle: var(--color-level-9);
+    --interactable-active-border: var(--color-level-6);
+    --interactable-idle-border: var(--color-level-7);
+    --interactable-active: var(--color-level-7);
+    --interactable-idle: var(--color-level-8);
 
     --text-active: var(--color-level-3);
     --text-idle: var(--color-level-4);

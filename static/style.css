@@ -38,6 +38,7 @@ body {
     --accent-shaded: #d62323;
     --accent-shaded-darker: #911414;
 
+    --color-level-0: #000000;
     --color-level-1: #202020;
     --color-level-2: #222222;
     --color-level-3: #2C2C2C;
@@ -53,6 +54,7 @@ body {
 
 .parallax-group {
     width: 100%;
+    height: 100%;
     transform-style: preserve-3d;
 }
 
@@ -66,4 +68,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+
+    display: flex;
+    flex-direction: column;
 }

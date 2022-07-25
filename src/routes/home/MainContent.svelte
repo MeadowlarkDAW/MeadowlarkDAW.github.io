@@ -4,13 +4,15 @@
     import MainContentButton from "./MainContentButton.svelte";
 </script>
 
-<div class="parallax-layer img-background" />
+<div class="parallax-layer img-wrapper">
+    <img class="img-background" src="gui-mockup.png" alt="meadowlark" />
+</div>
 <div class="parallax-layer front">
     <div class="main-content">
         <div class="main-content-title-wrapper">
             <h1 class="main-content-title">MEAD</h1>
             <Logo
-                fill="var(--color-level-9)"
+                fill="var(--text-active)"
                 logoId={Logos.MeadowlarkCircled}
                 height="3.2rem"
                 width="3.2rem"
@@ -35,9 +37,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+        padding-top: 5rem;
         margin: auto;
-        padding-bottom: 8rem;
     }
 
     .main-content-title-wrapper {
@@ -54,16 +56,16 @@
         font-size: 4rem;
         font-weight: 900;
         line-height: 5rem;
-        color: var(--color-level-9);
+        color: var(--text-active);
     }
 
     #main-content-subtitle {
         text-align: center;
         font-family: Min Sans;
         line-clamp: 2;
-        color: var(--color-level-7);
-        padding-top: 2rem;
-        padding-bottom: 4rem;
+        color: var(--text-idle);
+        padding-top: 1rem;
+        padding-bottom: 2rem;
     }
 
     #main-content-buttons {
@@ -80,19 +82,22 @@
         z-index: 100;
     }
 
-    .img-background {
-        width: 125%;
-        height: 125%;
-        background: linear-gradient(to bottom, #000000 0%, #00000000 50%),
-            url("gui-mockup.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-
-        /* Parallax */
-        transform: translateZ(-350px) scale(2.5);
+    .img-wrapper {
+        transform: translateZ(-100px) scale(1.25);
         z-index: 1;
 
-        filter: blur(2px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .img-background {
+        width: 65rem;
+        height: 36.5rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-top: 23rem;
     }
 </style>
