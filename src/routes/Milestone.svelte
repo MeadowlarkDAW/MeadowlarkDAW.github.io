@@ -4,7 +4,7 @@
 
     export let name = "";
     export let description = "";
-    export let expected = "";
+    export let status = "";
     export let color = "";
     export let icon = "";
     export let odd = false;
@@ -23,7 +23,10 @@
         <h4 class="milestone-name">{name}</h4>
         <p class="milestone-description">{description}</p>
     </div>
-    <p>{expected}</p>
+    <div class="milestone-status">
+        <h4 class="milestone-name">Status</h4>
+        <p class="milestone-description">{status}</p>
+    </div>
 </div>
 
 <style>
@@ -71,5 +74,10 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+    }
+
+    .milestone-status {
+        width: 100%;
+        text-align: right;
     }
 </style>

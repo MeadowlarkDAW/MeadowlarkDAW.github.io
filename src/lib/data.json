@@ -76,30 +76,9 @@
     ],
     "roadmap": [
         {
-            "name": "Release v1.0",
-            "description": "Version 1.0 of Meadowlark!",
-            "expected": "Infinity",
-            "color": "red",
-            "icon": "OpenSource"
-        },
-        {
-            "name": "Release v1.0",
-            "description": "Version 1.0 of Meadowlark!",
-            "expected": "Infinity",
-            "color": "red",
-            "icon": "OpenSource"
-        },
-        {
-            "name": "Release v1.0",
-            "description": "Version 1.0 of Meadowlark!",
-            "expected": "Infinity",
-            "color": "red",
-            "icon": "OpenSource"
-        },
-        {
-            "name": "Release v1.0",
-            "description": "Version 1.0 of Meadowlark!",
-            "expected": "Infinity",
+            "name": "First Alpha Release",
+            "description": "First testable alpha version",
+            "status": "work in progress",
             "color": "red",
             "icon": "OpenSource"
         }

@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-9d4824d6.js",
+    "file": "_app/immutable/start-35a5be5e.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -52,13 +52,13 @@
     ]
   },
   "src/routes/Features.svelte": {
-    "file": "_app/immutable/pages/Features.svelte-6ad33da0.js",
+    "file": "_app/immutable/pages/Features.svelte-10f3a50d.js",
     "src": "src/routes/Features.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-f3b5f3fe.js",
-      "_stores-bea0f4a6.js",
+      "_stores-204de4d6.js",
       "src/routes/FeatureBlock.svelte",
       "_index-5bd72393.js",
       "_Logo-c1a927c1.js"
@@ -69,7 +69,7 @@
     ]
   },
   "src/routes/MainContent.svelte": {
-    "file": "_app/immutable/pages/MainContent.svelte-c84c4310.js",
+    "file": "_app/immutable/pages/MainContent.svelte-79f2b0a4.js",
     "src": "src/routes/MainContent.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -77,7 +77,7 @@
       "_index-f3b5f3fe.js",
       "_Logo-c1a927c1.js",
       "src/routes/MainContentButton.svelte",
-      "_stores-bea0f4a6.js",
+      "_stores-204de4d6.js",
       "_index-5bd72393.js"
     ],
     "css": [
@@ -97,7 +97,7 @@
     ]
   },
   "src/routes/Milestone.svelte": {
-    "file": "_app/immutable/pages/Milestone.svelte-27d7d829.js",
+    "file": "_app/immutable/pages/Milestone.svelte-c70dbd20.js",
     "src": "src/routes/Milestone.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -106,17 +106,17 @@
       "_Logo-c1a927c1.js"
     ],
     "css": [
-      "_app/immutable/assets/Milestone-4fc29f5f.css"
+      "_app/immutable/assets/Milestone-2cb82c44.css"
     ]
   },
   "src/routes/Milestones.svelte": {
-    "file": "_app/immutable/pages/Milestones.svelte-6ef062f4.js",
+    "file": "_app/immutable/pages/Milestones.svelte-3834db7d.js",
     "src": "src/routes/Milestones.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-f3b5f3fe.js",
-      "_stores-bea0f4a6.js",
+      "_stores-204de4d6.js",
       "src/routes/Milestone.svelte",
       "_index-5bd72393.js",
       "_Logo-c1a927c1.js"
@@ -127,14 +127,14 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "_app/immutable/pages/index.svelte-895e8129.js",
+    "file": "_app/immutable/pages/index.svelte-f4f0d681.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-f3b5f3fe.js",
-      "_Navbar-d1057815.js",
-      "_stores-bea0f4a6.js",
+      "_Navbar-af8efd5d.js",
+      "_stores-204de4d6.js",
       "src/routes/Features.svelte",
       "src/routes/MainContent.svelte",
       "src/routes/Milestones.svelte",
@@ -150,15 +150,15 @@
     ]
   },
   "src/routes/test/index.svelte": {
-    "file": "_app/immutable/pages/test/index.svelte-2bde1552.js",
+    "file": "_app/immutable/pages/test/index.svelte-f7bc2d92.js",
     "src": "src/routes/test/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-f3b5f3fe.js",
-      "_Navbar-d1057815.js",
+      "_Navbar-af8efd5d.js",
       "_Logo-c1a927c1.js",
-      "_stores-bea0f4a6.js",
+      "_stores-204de4d6.js",
       "_index-5bd72393.js"
     ]
   },
@@ -177,53 +177,53 @@
       "_index-f3b5f3fe.js"
     ]
   },
-  "_stores-bea0f4a6.js": {
-    "file": "_app/immutable/chunks/stores-bea0f4a6.js",
+  "_stores-204de4d6.js": {
+    "file": "_app/immutable/chunks/stores-204de4d6.js",
     "imports": [
       "_index-5bd72393.js"
     ]
   },
-  "_Navbar-d1057815.js": {
-    "file": "_app/immutable/chunks/Navbar-d1057815.js",
+  "_Navbar-af8efd5d.js": {
+    "file": "_app/immutable/chunks/Navbar-af8efd5d.js",
     "imports": [
       "_index-f3b5f3fe.js",
       "_Logo-c1a927c1.js",
-      "_stores-bea0f4a6.js"
+      "_stores-204de4d6.js"
     ],
     "css": [
       "_app/immutable/assets/Navbar-03d0da7b.css"
     ]
   },
-  "FeatureBlock.css": {
-    "file": "_app/immutable/assets/FeatureBlock-6dd96bc9.css",
-    "src": "FeatureBlock.css"
-  },
   "src/routes/MainContentButton.css": {
     "file": "_app/immutable/assets/MainContentButton-6da28031.css",
     "src": "src/routes/MainContentButton.css"
-  },
-  "src/routes/Milestone.css": {
-    "file": "_app/immutable/assets/Milestone-4fc29f5f.css",
-    "src": "src/routes/Milestone.css"
   },
   "src/routes/Features.css": {
     "file": "_app/immutable/assets/Features-b652db26.css",
     "src": "src/routes/Features.css"
   },
-  "src/routes/Milestones.css": {
-    "file": "_app/immutable/assets/Milestones-41f03b5d.css",
-    "src": "src/routes/Milestones.css"
-  },
   "src/routes/index.css": {
     "file": "_app/immutable/assets/index-76cc3861.css",
     "src": "src/routes/index.css"
   },
-  "Navbar.css": {
-    "file": "_app/immutable/assets/Navbar-03d0da7b.css",
-    "src": "Navbar.css"
+  "src/routes/Milestone.css": {
+    "file": "_app/immutable/assets/Milestone-2cb82c44.css",
+    "src": "src/routes/Milestone.css"
   },
   "src/routes/MainContent.css": {
     "file": "_app/immutable/assets/MainContent-79dfb1c0.css",
     "src": "src/routes/MainContent.css"
+  },
+  "src/routes/Milestones.css": {
+    "file": "_app/immutable/assets/Milestones-41f03b5d.css",
+    "src": "src/routes/Milestones.css"
+  },
+  "FeatureBlock.css": {
+    "file": "_app/immutable/assets/FeatureBlock-6dd96bc9.css",
+    "src": "FeatureBlock.css"
+  },
+  "Navbar.css": {
+    "file": "_app/immutable/assets/Navbar-03d0da7b.css",
+    "src": "Navbar.css"
   }
 }

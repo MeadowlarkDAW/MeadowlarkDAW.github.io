@@ -8,11 +8,11 @@
     <h1>Roadmap</h1>
     <div class="divisor" />
     <div class="milestones-list">
-        {#each $data.roadmap as { name, description, expected, color, icon }, i}
+        {#each $data.roadmap as { name, description, status, color, icon }, i}
             <Milestone
                 {name}
                 {description}
-                {expected}
+                {status}
                 {color}
                 {icon}
                 odd={i % 2 == 1}
