@@ -72,7 +72,6 @@
         width: 100%;
         justify-content: center;
         gap: 1rem;
-        overflow: scroll;
     }
 
     .front {

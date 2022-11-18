@@ -81,6 +81,7 @@ span {
     background: linear-gradient(to right,
             var(--accent-color),
             var(--secondary-color));
+    -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     font-weight: 700;
