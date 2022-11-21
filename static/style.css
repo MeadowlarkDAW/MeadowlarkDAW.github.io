@@ -1,11 +1,11 @@
 @font-face {
     font-family: Min Sans;
-    src: url('/src/lib/assets/fonts/MinSansVF.ttf');
+    src: url('/assets/fonts/MinSansVF.ttf');
 }
 
 @font-face {
     font-family: SUIT;
-    src: url('/src/lib/assets/fonts/SUIT-Variable.ttf');
+    src: url('/assets/fonts/SUIT-Variable.ttf');
 }
 
 * {
