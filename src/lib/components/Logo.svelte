@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { logos, Logos, type Logo } from "./logos";
+    import { logos, Logos, type Logo } from "../logos";
 
     export let width = "2rem";
     export let height = "2rem";

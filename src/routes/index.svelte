@@ -1,13 +1,13 @@
 <script>
     // @ts-nocheck
 
-    import Navbar from "$lib/navbar/Navbar.svelte";
+    import Navbar from "$lib/components/navbar/Navbar.svelte";
 
     import { theme } from "$lib/stores";
     import { themeToString } from "$lib/theme";
-    import Features from "./Features.svelte";
-    import MainContent from "./MainContent.svelte";
-    import Milestones from "./Milestones.svelte";
+    import Features from "$lib/components/Features.svelte";
+    import MainContent from "$lib/components/MainContent.svelte";
+    import Milestones from "$lib/components/Milestones.svelte";
 </script>
 
 <svelte:head>

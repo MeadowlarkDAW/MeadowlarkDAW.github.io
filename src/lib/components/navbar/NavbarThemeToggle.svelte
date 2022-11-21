@@ -1,7 +1,7 @@
 <script lang="ts">
     import { theme } from "$lib/stores";
-    import Logo from "../logos/Logo.svelte";
-    import { Logos } from "../logos/logos";
+    import Logo from "../Logo.svelte";
+    import { Logos } from "../../logos";
     $: toggled = false;
 
     const toggle = () => {
