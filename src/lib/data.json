@@ -21,24 +21,24 @@
             "link": ""
         },
         {
-            "text": "Discord",
+            "text": "discord",
             "link": "https://discord.gg/2W3Xvc8wy4",
             "icon": "Discord"
         },
         {
-            "text": "GitHub",
+            "text": "github",
             "link": "https://github.com/MeadowlarkDAW/Meadowlark",
             "icon": "Github"
         }
     ],
     "mainContentButtons": [
         {
-            "text": "GitHub",
+            "text": "Github",
             "link": "https://github.com/MeadowlarkDAW/Meadowlark"
         },
         {
             "text": "Learn More",
-            "link": "#features"
+            "link": "https://www.youtube.com/watch?v=p7YXXieghto"
         }
     ],
     "mainContentSubtext": "Meadowlark is a (currently incomplete) project that aims to be a FREE and open-source DAW for Linux, Mac and Windows. Help us release it by contributing on GitHub!",

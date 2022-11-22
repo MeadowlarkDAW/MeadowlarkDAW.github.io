@@ -1,7 +1,7 @@
 <script lang="ts">
     import NavbarButton from "./NavbarButton.svelte";
     import NavbarDivisor from "./NavbarDivisor.svelte";
-    import { stringToLogos } from "../../logos";
+    import { stringToLogos } from "$lib/assets/logos/logos";
     import NavbarThemeToggle from "./NavbarThemeToggle.svelte";
     import { data } from "$lib/stores";
 </script>
@@ -10,7 +10,7 @@
     <div class="navbar-wrapper">
         <img
             class="navbar-logo"
-            src="/assets/imgs/meadowlark-logo-64.png"
+            src="meadowlark-logo-64.png"
             alt="meadowlark logo"
         />
         <div class="navbar-right">

@@ -1,12 +1,12 @@
 <script>
-    import Logo from "./Logo.svelte";
-    import { Logos, stringToLogos } from "../logos";
+    import Logo from "$lib/assets/logos/Logo.svelte";
+    import { Logos, stringToLogos } from "$lib/assets/logos/logos";
     import MainContentButton from "./MainContentButton.svelte";
     import { data } from "$lib/stores";
 </script>
 
 <div class="parallax-layer img-wrapper">
-    <img class="img-background" src="/assets/imgs/gui-mockup.png" alt="meadowlark" />
+    <img class="img-background" src="gui-mockup.png" alt="meadowlark" />
 </div>
 <div class="parallax-layer front">
     <div class="main-content">

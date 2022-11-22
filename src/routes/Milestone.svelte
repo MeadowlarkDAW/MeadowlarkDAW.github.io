@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Logo from "./Logo.svelte";
-    import { stringToLogos } from "../logos";
+    import Logo from "$lib/assets/logos/Logo.svelte";
+    import { stringToLogos } from "$lib/assets/logos/logos";
 
     export let name = "";
     export let description = "";

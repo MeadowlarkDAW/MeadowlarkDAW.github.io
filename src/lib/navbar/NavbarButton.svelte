@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { Logos } from "../../logos";
-    import Logo from "../Logo.svelte";
+    import { Logos } from "$lib/assets/logos/logos";
+    import Logo from "$lib/assets/logos/Logo.svelte";
 
     export let icon: Logos = Logos.None;
     export let text: string = "Button";
