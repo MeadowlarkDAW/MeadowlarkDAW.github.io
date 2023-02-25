@@ -1,0 +1,60 @@
+:root {
+	--accent-lighter: #ff6b6b;
+	--accent-color: #ff3939;
+	--accent-shaded: #d62323;
+	--accent-shaded-darker: #911414;
+
+	--secondary-color: #4292ed;
+
+	--light-accent: #ffffff22;
+
+	--header-color-1: #ff3939;
+	--header-color-2: #4292ed;
+
+	--color-level-0: #000000;
+	--color-level-1: #202020;
+	--color-level-2: #222222;
+	--color-level-3: #2c2c2c;
+	--color-level-4: #3d3d3d;
+	--color-level-5: #525252;
+	--color-level-6: #7d7d7d;
+	--color-level-7: #b8b8b8;
+	--color-level-8: #dcdcdc;
+	--color-level-9: #fff;
+}
+
+.dark {
+	--background-main: var(--color-level-3);
+	--background-secondary: var(--color-level-4);
+	--background-tertiary: var(--color-level-5);
+	--background-decor: var(--color-level-3);
+	--background-decor-darker: var(--color-level-1);
+	--contrast: var(--color-level-0);
+
+	--interactable-active-border: var(--color-level-5);
+	--interactable-idle-border: var(--color-level-4);
+	--interactable-active: var(--color-level-4);
+	--interactable-idle: var(--color-level-3);
+
+	--text-active: var(--color-level-9);
+	--text-idle: var(--color-level-8);
+	--text-disabled: var(--color-level-7);
+}
+
+.light {
+	--background-main: var(--color-level-9);
+	--background-secondary: var(--color-level-8);
+	--background-tertiary: var(--color-level-7);
+	--background-decor: var(--color-level-6);
+	--background-decor-darker: var(--color-level-5);
+	--contrast: var(--color-level-9);
+
+	--interactable-active-border: var(--color-level-6);
+	--interactable-idle-border: var(--color-level-7);
+	--interactable-active: var(--color-level-7);
+	--interactable-idle: var(--color-level-8);
+
+	--text-active: var(--color-level-3);
+	--text-idle: var(--color-level-4);
+	--text-disabled: var(--color-level-2);
+}
